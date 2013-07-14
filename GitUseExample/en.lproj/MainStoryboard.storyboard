@@ -25,10 +25,21 @@
                                     <action selector="clickTheButton:" destination="2" eventType="touchUpInside" id="c6e-Yf-zCF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="this lable will show the merge from a branck to main worked" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoT-x2-XNq">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="TdU-fo-baS"/>
+                                    <constraint firstAttribute="width" constant="286" id="mLC-lx-1Ba"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1hN-cM-hF6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="180" id="QRl-TZ-dh9"/>
+                            <constraint firstItem="HoT-x2-XNq" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="YrV-7l-jie"/>
+                            <constraint firstAttribute="bottom" secondItem="HoT-x2-XNq" secondAttribute="bottom" constant="216" id="ccv-1g-IDC"/>
                             <constraint firstItem="1hN-cM-hF6" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="94" id="qRc-6M-KFW"/>
                         </constraints>
                     </view>
@@ -37,6 +48,17 @@
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clickTheButton:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
