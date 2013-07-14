@@ -34,13 +34,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IQ2-hL-0OJ">
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IQ2-hL-0OJ" secondAttribute="bottom" constant="25" id="5gm-gD-YmJ"/>
                             <constraint firstItem="1hN-cM-hF6" firstAttribute="top" secondItem="3" secondAttribute="top" constant="180" id="QRl-TZ-dh9"/>
                             <constraint firstItem="HoT-x2-XNq" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="YrV-7l-jie"/>
                             <constraint firstAttribute="bottom" secondItem="HoT-x2-XNq" secondAttribute="bottom" constant="216" id="ccv-1g-IDC"/>
                             <constraint firstItem="1hN-cM-hF6" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="94" id="qRc-6M-KFW"/>
+                            <constraint firstItem="IQ2-hL-0OJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="67" id="tAo-qd-3Dt"/>
                         </constraints>
                     </view>
                 </viewController>
